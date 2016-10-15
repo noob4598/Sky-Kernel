@@ -3,7 +3,14 @@ CONFIG_MSM_MHI=y
 CONFIG_MSM_MHI_UCI=y
 
 CONFIG_SEC_TRLTE_PROJECT=y
+<<<<<<< HEAD:arch/arm/configs/apq8084_sec_trlte_tmo_defconfig
 CONFIG_MACH_TRLTE_TMO=y
+=======
+CONFIG_MACH_TRLTE_EUR=y
+CONFIG_LOCALVERSION="-RamKernel_V2"
+CONFIG_LOCALVERSION_AUTO=n
+
+>>>>>>> 9e48d1b... Incremental version V2 for common source for all models and ramdisk update:arch/arm/configs/apq8084_sec_trlte_eur_defconfig
 #
 # MAX77828 IC
 #
@@ -167,6 +174,7 @@ CONFIG_NET_SCH_PRIO=y
 CONFIG_NET_SCHED=y   #depends on CONFIG_NET  which is enabled by default.. coz not seeing in the config file
 CONFIG_NET_CLS_BASIC=y # required if basic is being used as a filter. depends on CONFIG_NET_CLS so enabling it by default
 CONFIG_NET_CLS=y
+<<<<<<< HEAD:arch/arm/configs/apq8084_sec_trlte_tmo_defconfig
 CONFIG_NET_CLS_ACT=y # for enabling the action target.
 CONFIG_NET_ACT_MIRRED=y  # for enabling the mirred target for redirecting the packet between the devices.
 CONFIG_NET_EMATCH=y   #basic uses extended matches so this has to be present
@@ -177,3 +185,9 @@ CONFIG_WLAN_REGION_CODE=402
 
 # MODEM SECURE CHECK
 CONFIG_SEC_PERIPHERAL_SECURE_CHK=y
+=======
+CONFIG_NET_CLS_ACT=y
+CONFIG_NET_ACT_MIRRED=y
+CONFIG_NET_EMATCH=y
+CONFIG_NET_SCH_INGRESS=y
+>>>>>>> 9e48d1b... Incremental version V2 for common source for all models and ramdisk update:arch/arm/configs/apq8084_sec_trlte_eur_defconfig
